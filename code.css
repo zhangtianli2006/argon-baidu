@@ -231,13 +231,13 @@ body {
     display: none;
 }
 
-div[class="s_form_wrapper soutu-env-nomac soutu-env-index"] {
+#head > div > div.s_form > div {
     position: fixed;
-    width: 60% !important;
-    height:30% !important;
-    left: 20% !important;
-    right: 20% !important;
-    top: 25% !important;
+    width: 60%;
+    height:0px;
+    left: 20%;
+    right: 20%;
+    top: 25%;
 }
 
 /*serch form*/
@@ -276,4 +276,63 @@ div[class="s_form_wrapper soutu-env-nomac soutu-env-index"] {
     background-color: #5e72e4 !important;
     box-shadow: rgba(50, 50, 93, 0.11) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 1px 3px;
     transform: translateY(-2px);
+}
+
+form[id="form"] {
+    margin-left: 75px;
+    width: 650px !important;
+    inline-size: max-content;
+    margin-top: -3px;
+}
+
+#head {
+    margin-top: 10px;
+    background-color: #0000;
+    border: none;
+}
+
+#head.s_down {
+    box-shadow: none;
+}
+
+#result_logo {
+    display: none;
+}
+
+#u {
+    position: fixed;
+    right: -180px;
+}
+
+html>body>div#wrapper.wrapper_l>div#head>div.head_wrapper {
+    border-radius: 3px 3px 3px 3px;
+    background-color: #fff;
+    width: 70%;
+    height: 80px;
+    margin-left: 15%;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07) !important;
+}
+
+html>body>div#wrapper.wrapper_s>div#head>div.head_wrapper {
+    border-radius: 3px 3px 3px 3px;
+    background-color: #fff;
+    width: 70%;
+    height: 80px;
+    margin-left: 15%;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07) !important;
+}
+
+div[id="s_tab"] {
+    padding-top: 70px !important;
+}
+
+.s_form {
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    height: 80px;
+}
+
+/*content*/
+div[id="content_right"] {
+    display:none;
 }
