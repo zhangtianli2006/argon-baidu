@@ -234,6 +234,7 @@ body {
 .qrcodeCon {
     display: none;
 }
+
 .ftCon-Wrapper {
     display: none;
 }
@@ -304,7 +305,7 @@ form[id="form"] {
     box-shadow: none;
 }
 
-#result_logo {
+.index-logo-src {
     display: none;
 }
 
@@ -362,8 +363,9 @@ div[id="content_right"] {
 }
 
 #s_tab b {
+    border-top: 10px solid #5e72e4 !important;
     width: 64px !important;
     height: 64px;
     font-size: 0;
-    background: url(https://www.easyicon.net/api/resizeApi.php?id=1128668&size=64);
+    background: url(https://s2.ax1x.com/2020/01/03/lNz6KI.png);
 }
