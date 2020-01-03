@@ -1,4 +1,4 @@
-@-moz-document url-prefix("https://www.baidu.com/") {
+@-moz-document url-prefix("http://www.baidu.com/"), url-prefix("https://www.baidu.com/"), url-prefix("http://baidu.com/"), url-prefix("https://baidu.com/") {
 /*animations*/
 @keyframes hover-shadow-fade {
     0% {
@@ -230,6 +230,30 @@ body {
     background-color: #f4f5f7 !important;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5e72e4;
+}
+*::selection {
+    background-color: #cce2ff;
+}
+*::-moz-selection {
+    background-color: #cce2ff;
+}
+*::-webkit-selection {
+    background-color: #cce2ff;
+}
+
 /*front page*/
 
 .qrcodeCon {
@@ -250,6 +274,10 @@ body {
 }
 
 /*serch form*/
+#result_logo {
+    display: none;
+}
+
 .s_ipt {
     margin: 0;
     margin-left: 10px !important;
@@ -294,9 +322,11 @@ form[id="form"] {
 }
 
 #head {
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    min-width: 1%;
+    position: relative;
+    width: 70% !important;
+    margin-left: 15% !important;
+    margin-right: 15% !important;
     margin-top: 10px;
     background-color: #0000;
     border: none;
@@ -306,11 +336,8 @@ form[id="form"] {
     box-shadow: none;
 }
 
-.index-logo-src {
-    display: none;
-}
-
 #u {
+    display: none;
     position: fixed;
     right: -180px;
 }
@@ -320,7 +347,7 @@ html>body>div#wrapper.wrapper_l>div#head>div.head_wrapper {
     background-color: #fff;
     width: 100%;
     height: 80px;
-    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07) !important;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 5px 15px, rgba(0, 0, 0, 0.07) 0px 5px 8px
 }
 
 html>body>div#wrapper.wrapper_s>div#head>div.head_wrapper {
@@ -328,7 +355,7 @@ html>body>div#wrapper.wrapper_s>div#head>div.head_wrapper {
     background-color: #fff;
     width: 100%;
     height: 80px;
-    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07) !important;
+    box-shadow:rgba(50, 50, 93, 0.1) 0px 5px 15px, rgba(0, 0, 0, 0.07) 0px 5px 8px
 }
 
 .s_form {
@@ -346,11 +373,33 @@ div[id="content_right"] {
     display:none;
 }
 
+#content_left {
+    border-radius: 3px 3px 3px 3px;
+    background-color: #fff;
+    padding: 40px 0 0 0 !important;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 5px 15px, rgba(0, 0, 0, 0.07) 0px 5px 8px;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70% !important;
+}
+
+.result {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+}
+
+.result-op {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+}
+
 /*left bar*/
 .s_tab {
     display: flex;
     background-color: #fff;
-    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07) !important;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 5px 15px, rgba(0, 0, 0, 0.07) 0px 5px 8px !important;
     padding: 0 !important;
     position: fixed;
     left: 0px;
@@ -365,6 +414,7 @@ div[id="content_right"] {
 
 #s_tab b {
     border-top: 10px solid #5e72e4 !important;
+    border-bottom: none;
     width: 64px !important;
     height: 64px;
     font-size: 0;
